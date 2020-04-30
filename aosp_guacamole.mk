@@ -8,14 +8,23 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from guacamole device
+# Inherit device configuration
 $(call inherit-product, device/oneplus/guacamole/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+CUSTOM_BUILD_TYPE := OFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_WIFI_EXT := true
+
+EVO_DONATE_URL := https://paypal.me/AnierinBliss
+EVO_MAINTAINER := AnierinB
+EVO_SUPPORT_URL := https://t.me/EvolutionXOnePlus
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_guacamole
+PRODUCT_NAME := aosp_guacamole
 PRODUCT_DEVICE := guacamole
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := OnePlus 7 Pro
@@ -25,12 +34,8 @@ PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 PRODUCT_CHARACTERISTICS := nosdcard
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 3120
-TARGET_SCREEN_WIDTH := 1440
-
 # Build info
-BUILD_FINGERPRINT := "OnePlus/OnePlus7Pro/OnePlus7Pro:10/QKQ1.190716.003/1909110008:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=OnePlus7Pro \
     PRODUCT_NAME=OnePlus7Pro \
