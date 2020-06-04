@@ -17,7 +17,6 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 CUSTOM_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_WIFI_EXT := true
 
 EVO_DONATE_URL := https://paypal.me/AnierinBliss
 EVO_MAINTAINER := AnierinB
