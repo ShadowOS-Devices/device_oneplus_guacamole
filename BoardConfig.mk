@@ -25,6 +25,9 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
+# Prebuilt TWRP
+TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := recovery/twrp/device/oneplus/guacamole/ramdisk-recovery.cpio
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
@@ -32,9 +35,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
-
-# Prebuilt TWRP include
--include device/twrp/guacamole/twrp.mk
 
 # Treble
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
