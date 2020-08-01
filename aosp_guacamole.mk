@@ -18,8 +18,8 @@ CUSTOM_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_GAPPS_ARCH := arm64
 
-EVO_DONATE_URL := https://paypal.me/AnierinBliss
-EVO_MAINTAINER := AnierinB
+EVO_DONATE_URL := https://paypal.me/Justasic
+EVO_MAINTAINER := NightShadow
 EVO_SUPPORT_URL := https://t.me/EvolutionXOnePlus
 
 # Device identifier. This must come after all inclusions.
