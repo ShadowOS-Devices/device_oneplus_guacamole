@@ -4,8 +4,8 @@
     "target_path" : "device/oneplus/sm8150-common"
   },
   {
-    "repository"  : "recovery_twrp",
-    "target_path" : "recovery/twrp/device/oneplus/guacamole",
+    "repository"  : "recovery_twrp_evox",
+    "target_path" : "recovery/twrp/evox/device/oneplus/guacamole",
     "branch"      : "guacamole",
     "clone-depth" : "1"
   }

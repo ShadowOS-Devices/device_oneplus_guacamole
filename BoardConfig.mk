@@ -26,7 +26,7 @@ BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Prebuilt TWRP
-TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := recovery/twrp/device/oneplus/guacamole/ramdisk-recovery.cpio
+TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := recovery/twrp/evox/device/oneplus/guacamole/ramdisk-recovery.cpio
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
