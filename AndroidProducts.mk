@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_guacamole.mk
+    $(LOCAL_DIR)/evolution_guacamole.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_guacamole-user \
-    aosp_guacamole-userdebug \
-    aosp_guacamole-eng
+    evolution_guacamole-user \
+    evolution_guacamole-userdebug \
+    evolution_guacamole-eng
