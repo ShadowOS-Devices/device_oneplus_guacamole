@@ -11,19 +11,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configuration
 $(call inherit-product, device/oneplus/guacamole/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-EVO_BUILD_TYPE := OFFICIAL
-TARGET_BOOT_ANIMATION_RES := 1440
-TARGET_GAPPS_ARCH := arm64
-
-EVO_DONATE_URL := https://paypal.me/Justasic
-EVO_MAINTAINER := NightShadow
-EVO_SUPPORT_URL := https://t.me/EvolutionXOnePlus
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_guacamole
+PRODUCT_NAME := lineage_guacamole
 PRODUCT_DEVICE := guacamole
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := OnePlus 7 Pro

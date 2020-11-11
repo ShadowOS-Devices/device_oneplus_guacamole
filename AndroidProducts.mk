@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_guacamole.mk
+    $(LOCAL_DIR)/lineage_guacamole.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_guacamole-user \
-    evolution_guacamole-userdebug \
-    evolution_guacamole-eng
+    lineage_guacamole-user \
+    lineage_guacamole-userdebug \
+    lineage_guacamole-eng
